@@ -13,6 +13,7 @@ environments:
     - url: https://conda.anaconda.org/bioconda/
     packages:
       linux-64:
+      - conda: https://conda.anaconda.org/bioconda/linux-64/salmon-2.8.0-hfa8f182_0.conda
       - conda: https://conda.anaconda.org/bioconda/linux-64/sracha-0.8.0-h54198d6_0.conda
       - conda: https://conda.anaconda.org/bioconda/noarch/fastq-dl-4.0.1-pyhdfd78af_0.conda
       - conda: https://conda.anaconda.org/bioconda/noarch/fastqc-0.13.0-hdfd78af_0.conda
@@ -134,6 +135,21 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/urllib3-2.8.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/xmltodict-1.0.4-pyhcf101f3_0.conda
 packages:
+- conda: https://conda.anaconda.org/bioconda/linux-64/salmon-2.8.0-hfa8f182_0.conda
+  sha256: 2daa4cdbb7135c61ebfeb65fac59a766c503ef09a9c9e66a569437006892ed5b
+  md5: b11b7bfe5747a772dd1328d757711933
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=14
+  constrains:
+  - __glibc >=2.17
+  license: BSD-3-Clause
+  license_family: BSD
+  run_exports:
+    weak:
+    - salmon >=2.8.0,<3.0a0
+  size: 3763799
+  timestamp: 1790375561731
 - conda: https://conda.anaconda.org/bioconda/linux-64/sracha-0.8.0-h54198d6_0.conda
   sha256: 9130b67717cffb37037c4bb057994dd9dba151498ad135b9cf1632c3c3cc353d
   md5: 901fcdd8326cb55e9e441aef9f11dcab
