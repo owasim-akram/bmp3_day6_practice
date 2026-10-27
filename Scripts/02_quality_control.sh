@@ -27,7 +27,7 @@ if [[ ${#fastq_files[@]} -eq 0 ]]; then
 fi
 
 echo "Running FastQC on ${#fastq_files[@]} files with ${THREADS} threads..."
-fastqc --threads "$THREADS" -o "$FASTQC_DIR" "${fastq_files[@]}"
+fastqc --threads "$THREADS" --outdir "$FASTQC_DIR" "${fastq_files[@]}"
 
 echo "Running MultiQC..."
 multiqc --force "$FASTQC_DIR" -o "$QC_DIR"

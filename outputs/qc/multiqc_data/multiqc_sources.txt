@@ -1,0 +1,3 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR1039508_1	/home/owasim/Bioinformatics/Bmp_practice/bmp3_day6_practice/outputs/qc/fastqc/SRR1039508_1_fastqc.zip
+FastQC	all_sections	SRR1039508_2	/home/owasim/Bioinformatics/Bmp_practice/bmp3_day6_practice/outputs/qc/fastqc/SRR1039508_2_fastqc.zip
